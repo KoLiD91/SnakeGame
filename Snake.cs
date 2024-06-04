@@ -92,7 +92,8 @@ namespace SnakeGame
                     return new Position(currentHead.X + 1, currentHead.Y);
                 case ConsoleKey.UpArrow:
                     return new Position(currentHead.X, currentHead.Y - 1);
-                
+                case ConsoleKey.DownArrow:
+                    return new Position(currentHead.X, currentHead.Y + 1);
                 default:
                     return currentHead;
             }
